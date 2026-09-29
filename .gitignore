@@ -17,5 +17,14 @@ env/
 static/uploads/*
 !static/uploads/.gitkeep
 
+# Junction to repo-root static/ so the legacy Flask app can serve assets
+legacy_code/static/
+
+# New build — frontend + backend
+node_modules/
+dist/
+backend/.venv/
+backend/uploads/
+
 seed_data.py
 create_admin.py
